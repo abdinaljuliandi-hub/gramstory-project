@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GRAMSTORY PROJECT BY BAGAS ENDIKA - Distribusi Musik Global</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    color: white;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.7);
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #ff6f61;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* SECTION */
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* SERVICE BOX */
+.service-item {
+    background: rgba(255,255,255,0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+/* PLATFORM */
+.platform-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.platform-item {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.platform-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255,255,255,0.2);
+}
+
+.platform-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact-box {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background: #24c6dc;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0,0,0,0.7);
+    padding: 20px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>GRAMSTORY PROJECT</h1>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Layanan</a></li>
+<li><a href="#platform">Platform</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-box">
+    <h2>Rilis Musik Anda ke 15+ Digital Music Platform Dunia</h2>
+    <p>
+      Distribusikan musik / rilis musik secara online dengan menjual dan 
+      memperdengarkan lagu kamu melalui 
+      <span class="highlight">Spotify</span>, 
+      <span class="highlight">Apple Music</span>, 
+      <span class="highlight">JOOX</span>, 
+      <span class="highlight">Deezer</span>, 
+      <span class="highlight">TikTok</span>, 
+      <span class="highlight">Facebook</span>, 
+      <span class="highlight">Instagram</span> 
+      dan <span class="highlight">DSP</span> worldwide lainnya secara GRATIS 
+      hanya di Gramstory Project.
+    </p>
+  </div>
+</section>
+
+<style>
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  overflow: hidden;
+}
+
+/* efek timbul di background */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0,119,255,0.4) 0%, transparent 70%);
+  top: -150px;
+  left: -150px;
+  filter: blur(80px);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+  filter: blur(100px);
+}
+
+/* box 3D */
+.hero-box {
+  position: relative;
+  background: rgba(0, 119, 255, 0.25);
+  backdrop-filter: blur(15px);
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 800px;
+  color: white;
+  text-align: center;
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.6),
+    inset 0 0 30px rgba(255,255,255,0.1);
+  z-index: 2;
+}
+
+.highlight {
+  color: #ffd700;
+  font-weight: bold;
+}
+</style>
+<section id="services">
+<h2>Layanan Kami</h2>
+
+<div class="service-item">
+<h3>Distribusi Musik Global</h3>
+<p>Distribusi ke Spotify, Apple Music, iTunes, Amazon Music, Deezer, TikTok dan banyak platform lainnya.</p>
+</div>
+
+<div class="service-item">
+<h3>Monetisasi & Royalti</h3>
+<p>Dapatkan laporan transparan dan penghasilan dari streaming kalian.</p>
+</div>
+
+<div class="service-item">
+<h3>Support Profesional</h3>
+<p>Kami siap membantu proses rilis hingga musik Anda tayang di berbagai store digital.</p>
+</div>
+</section>
+
+<section id="platform">
+<h2>Platform Distribusi</h2>
+
+<div class="platform-grid">
+
+<div class="platform-item">
+<i class="fab fa-spotify"></i>
+<p>Spotify</p>
+</div>
+
+<div class="platform-item">
+<i class="fab fa-apple"></i>
+<p>Apple Music</p>
+</div>
+
+<div class="platform-item">
+<i class="fas fa-music"></i>
+<p>iTunes</p>
+</div>
+
+<div class="platform-item">
+<i class="fas fa-headphones"></i>
+<p>JOOX</p>
+</div>
+
+<div class="platform-item">
+<i class="fab fa-amazon"></i>
+<p>Amazon Music</p>
+</div>
+
+<div class="platform-item">
+<i class="fas fa-compact-disc"></i>
+<p>Deezer</p>
+</div>
+
+<div class="platform-item">
+<i class="fab fa-tiktok"></i>
+<p>TikTok</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+  <div class="about-container">
+    <h2>Tentang Gramstory Project</h2>
+    <p>
+      Gramstory Project adalah layanan distribusi musik digital yang membantu 
+      musisi independen dan label untuk merilis lagu secara global maupun lokal. 
+      Kami memberikan kemudahan proses distribusi, pengelolaan royalti, serta 
+      dukungan teknis agar karya Anda dapat dinikmati oleh pendengar di seluruh dunia.
+    </p>
+  </div>
+</section>
+
+<style>
+#about {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #111; /* bisa dihapus kalau tidak mau background */
+}
+
+.about-container {
+  max-width: 800px;
+  text-align: center;
+  color: white;
+}
+
+.about-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-container h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.about-container p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+</style>
+
+<section id="panduan">
+  <div class="panduan-box">
+    <h2>Panduan</h2>
+    <p>Gabung dan pahami panduan komunitas kami.</p>
+  </div>
+</section>
+
+<style>
+#panduan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.panduan-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px 50px;
+  border-radius: 15px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.panduan-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.panduan-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+</style>
+
+  <section id="about">
+  <div class="container">
+
+    <div class="box">
+      <h2>HAK CIPTA</h2>
+      <p>100% Artis.</p>
+    </div>
+
+    <div class="box">
+      <h2>LEBEL</h2>
+      <p>Gramstory Project.</p>
+    </div>
+
+    <div class="box">
+      <h2>Royalti</h2>
+      <p>75% Artis.</p>
+    </div>
+
+    <div class="box">
+      <h2>Proses Rilis</h2>
+      <p>5 s/d 10 Hari.</p>
+    </div>
+
+  </div>
+</section>
+
+<style>
+#about {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 70%;
+}
+
+.box {
+  background-color: #000; /* hitam */
+  color: #fff; /* teks putih */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.box h2 {
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+</style>
+<section id="contact">
+<h2>Kontak Kami</h2>
+
+<div class="contact-box">
+<p><strong>Email:</strong> bagasendica@gmail.com</p>
+<p><strong>WhatsApp:</strong> 0813-2894-5006</p>
+<p><strong>Instagram:</strong> @gramstoryproject</p>
+
+<form>
+<input type="text" placeholder="Nama Anda" required>
+<input type="email" placeholder="Email" required>
+<textarea rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+<button type="submit">Kirim Pesan</button>
+</form>
+</div>
+
+</section>
+
+  <section id="alamat">
+  <div class="alamat-box">
+    <h3>📍 Alamat</h3>
+    <p>
+      Jln. Takengon – Bener Meriah, Wonosobo Wih Pesam<br>
+      Lorong Paten No. 07, Dayah Baru<br>
+      Aceh, Indonesia
+    </p>
+  </div>
+</section>
+
+<style>
+#alamat {
+  display: flex;
+  justify-content: center;
+  padding: 30px 15px;
+  background: #111; /* cocok untuk footer */
+}
+
+.alamat-box {
+  color: #ccc;
+  text-align: center;
+  font-size: 13px;
+  max-width: 600px;
+}
+
+.alamat-box h3 {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.alamat-box p {
+  margin: 0;
+  line-height: 1.6;
+}
+</style>
+<footer>
+<p>© 2026 Gramstory Project - Semua Hak Dilindungi</p>
+</footer>
+
+</body>
+</html>
